@@ -6,7 +6,16 @@
       "icon": "Home",
       "description": "日常工作常用",
       "enabled": true,
-      "items": [],
+      "items": [
+        {
+          "id": "site_1776418121276_g1n1k2psh",
+          "title": "创客Scrm",
+          "href": "https://scrm.yearcon.com.cn/",
+          "description": "创客scrm管理后台",
+          "icon": "https://www.google.com/s2/favicons?sz=128&domain=scrm.yearcon.com.cn",
+          "enabled": true
+        }
+      ],
       "subCategories": []
     },
     {
