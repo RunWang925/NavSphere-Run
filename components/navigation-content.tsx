@@ -24,17 +24,15 @@ export function NavigationContent({ navigationData, siteData }: { navigationData
   const handleSearch = (query: string, type: 'baidu' | 'site') => {
     const trimmed = query.trim()
     
-    // 关键修正：如果输入内容为空，立即清空站内搜索状态，让界面恢复原状
+    // 如果输入内容为空，清空站内搜索状态
     if (!trimmed) {
       setSubmittedQuery('')
       return
     }
 
     if (type === 'site') {
-      // 执行站内搜索：在本页面更新状态
       setSubmittedQuery(trimmed)
     } else {
-      // 执行百度搜索：打开新标签页，不干扰当前页面状态
       window.open(`https://www.baidu.com/s?wd=${encodeURIComponent(trimmed)}`, '_blank')
     }
   }
@@ -96,7 +94,6 @@ export function NavigationContent({ navigationData, siteData }: { navigationData
               </Button>
             </div>
 
-            {/* 搜索组件调用 */}
             <div className="flex justify-center w-full"> 
               <SearchBar onSearch={handleSearch} searchQuery={submittedQuery} />
             </div>
@@ -118,11 +115,12 @@ export function NavigationContent({ navigationData, siteData }: { navigationData
         </div>
 
         <div className="px-4 sm:px-8 py-6">
-          {/* 站内搜索结果区域：仅在提交了查询且不为空时显示 */}
+          {/* 站内搜索结果区域 */}
           {submittedQuery && (
             <section className="mb-12">
+              {/* 核心修复：使用 &quot; 替换直接输入的双引号，解决腾讯云部署报错 */}
               <h2 className="text-base font-semibold text-foreground mb-4">
-                站内搜索结果: "{submittedQuery}"
+                站内搜索结果: &quot;{submittedQuery}&quot;
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4">
                 {searchResults.length > 0 ? (
@@ -139,7 +137,7 @@ export function NavigationContent({ navigationData, siteData }: { navigationData
             </section>
           )}
 
-          {/* 默认分类导航展示列表 */}
+          {/* 默认分类导航展示列表：始终显示 */}
           <div className="space-y-10">
             {navigationData.navigationItems.map((category) => (
               <section key={category.id} id={category.id} className="scroll-m-20">
