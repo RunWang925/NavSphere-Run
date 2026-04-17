@@ -22,6 +22,14 @@
           "description": "伯俊后台管理访问 10.1.50.8",
           "icon": "https://www.google.com/s2/favicons?sz=128&domain=10.1.50.8",
           "enabled": true
+        },
+        {
+          "id": "site_1776418239531_ir91kxm4o",
+          "title": "意尔康BT系统",
+          "href": "http://10.3.1.23:8080/webroot/decision/",
+          "description": "意尔康BT系统",
+          "icon": "https://www.google.com/s2/favicons?sz=128&domain=10.3.1.23",
+          "enabled": true
         }
       ],
       "subCategories": []
