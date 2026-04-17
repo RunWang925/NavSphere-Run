@@ -30,6 +30,14 @@
           "description": "意尔康BT系统",
           "icon": "https://www.google.com/s2/favicons?sz=128&domain=10.3.1.23",
           "enabled": true
+        },
+        {
+          "id": "site_1776418292324_y9l7g701f",
+          "title": "京东物流商家工作台",
+          "href": "https://wl.jdl.com/home",
+          "description": "京东物流，京东快递后台管理",
+          "icon": "/assets/favicon_1776418257069.png",
+          "enabled": true
         }
       ],
       "subCategories": []
