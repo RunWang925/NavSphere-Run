@@ -1,6 +1,15 @@
 {
   "navigationItems": [
     {
+      "id": "1776417985321",
+      "title": "日常办公",
+      "icon": "Zap",
+      "description": "日常工作常用",
+      "enabled": true,
+      "items": [],
+      "subCategories": []
+    },
+    {
       "id": "1",
       "title": "常用推荐",
       "icon": "Star",
@@ -1544,15 +1553,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": "1776417985321",
-      "title": "日常办公",
-      "icon": "Zap",
-      "description": "日常工作常用",
-      "enabled": true,
-      "items": [],
-      "subCategories": []
     }
   ]
 }
