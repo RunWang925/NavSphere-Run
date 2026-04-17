@@ -46,6 +46,14 @@
           "description": "萤石商业智居，萤石云后台，监控后台，门店监控管理后台",
           "icon": "/assets/favicon_1776418305645.png",
           "enabled": true
+        },
+        {
+          "id": "site_1776418371587_4sixcspup",
+          "title": "办公室监控管理后台",
+          "href": "http://10.31.150.251/",
+          "description": "访问 10.31.150.251",
+          "icon": "https://www.google.com/s2/favicons?sz=128&domain=10.31.150.251",
+          "enabled": true
         }
       ],
       "subCategories": []
