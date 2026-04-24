@@ -17,10 +17,10 @@
         },
         {
           "id": "site_1776418164524_7e07rbpqh",
-          "title": "伯俊后台管理10.1.50.8",
+          "title": "10",
           "href": "http://10.1.50.8/",
-          "description": "伯俊后台管理访问 10.1.50.8",
-          "icon": "https://www.google.com/s2/favicons?sz=128&domain=10.1.50.8",
+          "description": "访问 10.1.50.8",
+          "icon": "/assets/favicon_1777000914479.png",
           "enabled": true
         },
         {
