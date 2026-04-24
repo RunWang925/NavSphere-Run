@@ -9,10 +9,10 @@
       "items": [
         {
           "id": "site_1776418121276_g1n1k2psh",
-          "title": "创客Scrm",
+          "title": "Scrm",
           "href": "https://scrm.yearcon.com.cn/",
-          "description": "创客scrm管理后台",
-          "icon": "https://www.google.com/s2/favicons?sz=128&domain=scrm.yearcon.com.cn",
+          "description": "访问 scrm.yearcon.com.cn",
+          "icon": "/assets/favicon_1777000899487.png",
           "enabled": true
         },
         {
