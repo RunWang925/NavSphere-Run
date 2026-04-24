@@ -198,6 +198,14 @@
           "description": "访问 10.3.1.8",
           "icon": "/assets/img_1777012044583.png",
           "enabled": true
+        },
+        {
+          "id": "site_1777014943053_1bmpgl8ay",
+          "title": "意尔康体育BI系统",
+          "href": "http://10.3.1.8/#/login",
+          "description": "访问 10.3.1.8",
+          "icon": "/assets/img_1777012044583.png",
+          "enabled": true
         }
       ],
       "subCategories": [],
