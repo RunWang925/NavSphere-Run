@@ -38,14 +38,18 @@ export async function POST(request: Request) {
 
             } catch (error) {
                 console.warn('Failed to download icon:', error)
-                // 如果图标下载失败，尝试使用 Google favicon 服务
+                // ======================== 已修改 ========================
+                // 原来逻辑：下载失败 → 使用谷歌图标
+                // 现在逻辑：下载失败 → 直接使用 favicon.im（国内可用）
+                // 不再调用谷歌接口，彻底解决国内无法访问问题
+                // ======================================================
                 try {
                     const domain = new URL(url).hostname
-                    const fallbackIconUrl = await downloadGoogleFavicon(domain, session.user.accessToken)
+                    // 使用 favicon.im 替代谷歌，国内可直接访问
+                    const fallbackIconUrl = `https://favicon.im/${domain}?larger=true`
                     metadata.icon = fallbackIconUrl
                 } catch (fallbackError) {
-                    console.warn('Failed to download Google favicon:', fallbackError)
-                    // 保持原始 URL
+                    console.warn('使用 favicon.im 兜底失败:', fallbackError)
                 }
             }
         }
@@ -122,14 +126,17 @@ function getFallbackMetadata(url: string): WebsiteMetadata {
         const urlObj = new URL(url)
         const hostname = urlObj.hostname
 
-        // 生成基本的网站信息
         const title = hostname.replace(/^www\./, '').split('.')[0]
         const capitalizedTitle = title.charAt(0).toUpperCase() + title.slice(1)
 
         return {
             title: capitalizedTitle,
             description: `访问 ${hostname}`,
-            icon: `https://www.google.com/s2/favicons?sz=128&domain=${hostname}`
+            // ======================== 已修改 ========================
+            // 原来：谷歌图标接口（国内无法访问）
+            // 现在：favicon.im 国内可用高清图标接口
+            // ======================================================
+            icon: `https://favicon.im/${hostname}?larger=true`
         }
     } catch {
         return {
@@ -141,8 +148,6 @@ function getFallbackMetadata(url: string): WebsiteMetadata {
 }
 
 function parseMetadataFromHtml(html: string, url: string): WebsiteMetadata {
-
-    // 解析 HTML 获取元数据
     const title = extractMetaContent(html, 'title') ||
         extractMetaContent(html, 'og:title') ||
         extractMetaContent(html, 'twitter:title') ||
@@ -153,7 +158,6 @@ function parseMetadataFromHtml(html: string, url: string): WebsiteMetadata {
         extractMetaContent(html, 'twitter:description') ||
         ''
 
-    // 获取 favicon
     let icon = extractFavicon(html, url)
 
     return {
@@ -164,13 +168,11 @@ function parseMetadataFromHtml(html: string, url: string): WebsiteMetadata {
 }
 
 function extractMetaContent(html: string, name: string): string | null {
-    // 匹配 title 标签
     if (name === 'title') {
         const titleMatch = html.match(/<title[^>]*>([^<]*)<\/title>/i)
         return titleMatch ? titleMatch[1] : null
     }
 
-    // 匹配 meta 标签
     const patterns = [
         new RegExp(`<meta[^>]*name=["']${name}["'][^>]*content=["']([^"']*)["']`, 'i'),
         new RegExp(`<meta[^>]*content=["']([^"']*)["'][^>]*name=["']${name}["']`, 'i'),
@@ -191,7 +193,6 @@ function extractMetaContent(html: string, name: string): string | null {
 function extractFavicon(html: string, baseUrl: string): string | null {
     const base = new URL(baseUrl)
 
-    // 尝试从 HTML 中提取 favicon
     const faviconPatterns = [
         /<link[^>]*rel=["']icon["'][^>]*href=["']([^"']*)["']/i,
         /<link[^>]*href=["']([^"']*)["'][^>]*rel=["']icon["']/i,
@@ -217,39 +218,23 @@ function extractFavicon(html: string, baseUrl: string): string | null {
         }
     }
 
-    // 如果没有找到，使用 Google 的 favicon 服务作为备用
-    return `https://www.google.com/s2/favicons?sz=128&domain=${base.hostname}`
+    // ======================== 已修改 ========================
+    // 原来：没找到图标 → 使用谷歌
+    // 现在：没找到图标 → 使用 favicon.im（国内可用）
+    // ======================================================
+    return `https://favicon.im/${base.hostname}?larger=true`
 }
 
-async function downloadGoogleFavicon(domain: string, token: string): Promise<string> {
-    const googleFaviconUrl = `https://www.google.com/s2/favicons?sz=128&domain=${domain}`
-
-    try {
-        const response = await fetch(googleFaviconUrl, {
-            headers: {
-                'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
-                'Accept': 'image/*,*/*'
-            },
-            signal: AbortSignal.timeout(10000)
-        })
-
-        if (response.ok) {
-            const arrayBuffer = await response.arrayBuffer()
-            const binaryData = new Uint8Array(arrayBuffer)
-            const { path } = await uploadImageToGitHub(binaryData, token, 'png')
-            return path
-        } else {
-            throw new Error(`Failed to download Google favicon: ${response.status}`)
-        }
-    } catch (error) {
-        throw new Error(`Google favicon download failed: ${error instanceof Error ? error.message : 'Unknown error'}`)
-    }
-}
+// ======================== 已注释/废弃 ========================
+// 原来的谷歌下载函数，现在已经完全不用了
+// 因为全部替换成了 favicon.im，国内可直接访问
+// ============================================================
+// async function downloadGoogleFavicon(domain: string, token: string): Promise<string> {
+//     ... 谷歌代码已废弃 ...
+// }
 
 async function downloadAndUploadIcon(iconUrl: string, token: string): Promise<string> {
-    // 多种策略尝试下载favicon
     const strategies: Array<{ headers: HeadersInit; delay?: number }> = [
-        // 策略1: 完整浏览器模拟
         {
             headers: {
                 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
@@ -281,8 +266,6 @@ async function downloadAndUploadIcon(iconUrl: string, token: string): Promise<st
             if (response.ok) {
                 const arrayBuffer = await response.arrayBuffer()
                 const binaryData = new Uint8Array(arrayBuffer)
-
-                // 上传到 GitHub
                 const { path } = await uploadImageToGitHub(binaryData, token, getFileExtension(iconUrl))
                 return path
             } else {
@@ -295,7 +278,6 @@ async function downloadAndUploadIcon(iconUrl: string, token: string): Promise<st
         }
     }
 
-    // 如果所有策略都失败了，抛出最后一个错误
     throw lastError || new Error('All download strategies failed')
 }
 
@@ -307,7 +289,7 @@ function getFileExtension(url: string): string {
         if (extension && ['png', 'jpg', 'jpeg', 'gif', 'svg', 'ico'].includes(extension)) {
             return extension
         }
-        return 'png' // 默认扩展名
+        return 'png'
     } catch {
         return 'png'
     }
@@ -320,7 +302,6 @@ async function uploadImageToGitHub(binaryData: Uint8Array, token: string, extens
     const path = `/assets/favicon_${Date.now()}.${extension}`
     const githubPath = 'public' + path
 
-    // Convert Uint8Array to Base64
     const base64String = uint8ArrayToBase64(binaryData)
     const currentFileUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${githubPath}?ref=${branch}`
 
