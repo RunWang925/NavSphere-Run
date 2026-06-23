@@ -1609,7 +1609,16 @@
       "icon": "Globe",
       "description": "",
       "enabled": true,
-      "items": [],
+      "items": [
+        {
+          "id": "site_1782182920074_yo5or0q4w",
+          "title": "Console",
+          "href": "https://console.cloud.tencent.com/edgeone",
+          "description": "腾讯云 EdgeOne（边缘安全加速平台）腾讯云一站式网站加速 & 安全防护平台，提供 CDN、DDoS 防护、域名托管、边缘部署能力，保护源站并优化全球访问速度。",
+          "icon": "https://favicon.im/console.cloud.tencent.com?larger=true",
+          "enabled": true
+        }
+      ],
       "subCategories": []
     }
   ]
