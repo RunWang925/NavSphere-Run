@@ -1633,6 +1633,14 @@
           "description": "华为云Flexus服务器L 实例高性价比轻量化云主机，预装多类建站、开发应用镜像，可视化简易运维，自带防火墙、快照备份、固定带宽，上手门槛低，适合个人建站、程序部署、开发测试、小型项目落地，可平滑升级至华为云 ECS 弹性云服务器。",
           "icon": "https://favicon.im/console.huaweicloud.com?larger=true",
           "enabled": true
+        },
+        {
+          "id": "site_1782183499552_wuz1ydhsl",
+          "title": "华为云云解析 DNS",
+          "href": "https://console.huaweicloud.com/dns",
+          "description": "一站式公网 + 内网域名解析托管，支持 A/CNAME/MX 等多类型解析记录配置、权重负载均衡、批量管理解析记录，国内解析节点稳定高效，可用于网站域名指向、企业邮箱解析、云服务器内网域名调度，搭配云主机、CDN 业务实现域名统一运维管理。",
+          "icon": "https://favicon.im/console.huaweicloud.com?larger=true",
+          "enabled": true
         }
       ],
       "subCategories": []
