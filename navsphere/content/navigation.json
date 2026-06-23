@@ -1658,6 +1658,14 @@
               "description": "提供高性能对象存储与CDN服务，帮您节省多达4倍成本。",
               "icon": "/assets/favicon_1782208498014.ico",
               "enabled": true
+            },
+            {
+              "id": "site_1782208546224_vk5z9s959",
+              "title": "Sso",
+              "href": "https://sso.qiniu.com/",
+              "description": "访问 sso.qiniu.com",
+              "icon": "/assets/favicon_1782208540860.png",
+              "enabled": true
             }
           ]
         }
