@@ -1660,11 +1660,11 @@
               "enabled": true
             },
             {
-              "id": "site_1782208546224_vk5z9s959",
-              "title": "Sso",
-              "href": "https://sso.qiniu.com/",
-              "description": "访问 sso.qiniu.com",
-              "icon": "/assets/favicon_1782208540860.png",
+              "id": "site_1782208575968_zfezaq2um",
+              "title": "Console",
+              "href": "https://console.dogecloud.com/oss/overview",
+              "description": "访问 console.dogecloud.com",
+              "icon": "/assets/favicon_1782208570306.png",
               "enabled": true
             }
           ]
