@@ -1625,6 +1625,14 @@
           "description": "阿里云轻量应用服务器，高性价比轻量化云服务器，一键部署各类应用，可视化便捷运维，自带固定带宽与安全防护，适合个人建站、开发测试、小型业务部署。",
           "icon": "https://favicon.im/swasnext.console.aliyun.com?larger=true",
           "enabled": true
+        },
+        {
+          "id": "site_1782183355880_6qvndov5b",
+          "title": "华为云Flexus服务器",
+          "href": "https://console.huaweicloud.com/smb",
+          "description": "华为云Flexus服务器L 实例高性价比轻量化云主机，预装多类建站、开发应用镜像，可视化简易运维，自带防火墙、快照备份、固定带宽，上手门槛低，适合个人建站、程序部署、开发测试、小型项目落地，可平滑升级至华为云 ECS 弹性云服务器。",
+          "icon": "https://favicon.im/console.huaweicloud.com?larger=true",
+          "enabled": true
         }
       ],
       "subCategories": []
