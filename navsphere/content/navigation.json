@@ -40,7 +40,16 @@
           "enabled": true
         }
       ],
-      "subCategories": []
+      "subCategories": [
+        {
+          "id": "bb0fe8e2-a7a7-415e-b53a-d0612e4534de",
+          "title": "舆情监控",
+          "icon": "Globe",
+          "description": "",
+          "enabled": true,
+          "items": []
+        }
+      ]
     },
     {
       "id": "1",
