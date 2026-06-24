@@ -47,7 +47,16 @@
           "icon": "Globe",
           "description": "",
           "enabled": true,
-          "items": []
+          "items": [
+            {
+              "id": "site_1782294923522_pm1v4xa70",
+              "title": "圣融后台系统",
+              "href": "http://www.rendazx.com/admin",
+              "description": "",
+              "icon": "/assets/favicon_1782294904386.png",
+              "enabled": true
+            }
+          ]
         }
       ]
     },
