@@ -57,6 +57,14 @@
               "enabled": true
             }
           ]
+        },
+        {
+          "id": "61d70b4b-c211-4f90-bc90-364f5561d250",
+          "title": "工作相关",
+          "icon": "Laptop",
+          "description": "",
+          "enabled": true,
+          "items": []
         }
       ]
     },
