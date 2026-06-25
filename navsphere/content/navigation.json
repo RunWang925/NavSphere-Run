@@ -96,6 +96,14 @@
               "description": "草料二维码网址码生成器，支持单网址、多网址聚合，生成二维码扫码跳转。",
               "icon": "/assets/favicon_1782352431896.ico",
               "enabled": true
+            },
+            {
+              "id": "site_1782352528229_h8cwez10w",
+              "title": "飞书知识库",
+              "href": "https://my.feishu.cn/wiki/",
+              "description": "访问 my.feishu.cn",
+              "icon": "https://favicon.im/my.feishu.cn?larger=true",
+              "enabled": true
             }
           ]
         }
