@@ -1676,6 +1676,14 @@
               "description": "访问 console.upyun.com",
               "icon": "/assets/favicon_1782208598505.png",
               "enabled": true
+            },
+            {
+              "id": "site_1782352141270_1kr0mbz1g",
+              "title": "又拍云",
+              "href": "https://console.upyun.com/login/",
+              "description": "",
+              "icon": "/assets/favicon_1782352129054.png",
+              "enabled": true
             }
           ]
         },
