@@ -66,6 +66,14 @@
               "enabled": true
             }
           ]
+        },
+        {
+          "id": "0ee5919a-0072-45a1-9af6-59f48b69d50b",
+          "title": "博客相关",
+          "icon": "Users",
+          "description": "",
+          "enabled": true,
+          "items": []
         }
       ]
     },
