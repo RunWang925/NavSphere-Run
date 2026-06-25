@@ -1352,16 +1352,7 @@
       "id": "8",
       "title": "素材资源",
       "icon": "linecons-thumbs-up",
-      "items": [
-        {
-          "id": "site_1782353378321_sxj45370y",
-          "title": "无损音乐免费下载",
-          "href": "https://www.isflac.com/",
-          "description": "访问 www.isflac.com",
-          "icon": "https://favicon.im/www.isflac.com?larger=true",
-          "enabled": true
-        }
-      ],
+      "items": [],
       "subCategories": [
         {
           "id": "8_1",
@@ -1540,7 +1531,16 @@
           "icon": "Music",
           "description": "",
           "enabled": true,
-          "items": []
+          "items": [
+            {
+              "id": "site_1782353378321_sxj45370y",
+              "title": "无损音乐免费下载",
+              "href": "https://www.isflac.com/",
+              "description": "访问 www.isflac.com",
+              "icon": "https://favicon.im/www.isflac.com?larger=true",
+              "enabled": true
+            }
+          ]
         }
       ]
     },
