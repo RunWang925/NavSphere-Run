@@ -1629,14 +1629,6 @@
       "enabled": true,
       "items": [
         {
-          "id": "site_1782183141729_2h1fxjb08",
-          "title": "阿里云轻量应用服务器",
-          "href": "https://swasnext.console.aliyun.com/servers/cn-hangzhou",
-          "description": "阿里云轻量应用服务器，高性价比轻量化云服务器，一键部署各类应用，可视化便捷运维，自带固定带宽与安全防护，适合个人建站、开发测试、小型业务部署。",
-          "icon": "https://favicon.im/swasnext.console.aliyun.com?larger=true",
-          "enabled": true
-        },
-        {
           "id": "site_1782183355880_6qvndov5b",
           "title": "华为云Flexus服务器",
           "href": "https://console.huaweicloud.com/smb",
@@ -1700,6 +1692,14 @@
               "href": "https://console.cloud.tencent.com/edgeone",
               "description": "腾讯云 EdgeOne（边缘安全加速平台）腾讯云一站式网站加速 & 安全防护平台，提供 CDN、DDoS 防护、域名托管、边缘部署能力，保护源站并优化全球访问速度。国产 Cloudflare 替代方案",
               "icon": "https://favicon.im/console.cloud.tencent.com?larger=true",
+              "enabled": true
+            },
+            {
+              "id": "site_1782183141729_2h1fxjb08",
+              "title": "阿里云轻量应用服务器",
+              "href": "https://swasnext.console.aliyun.com/servers/cn-hangzhou",
+              "description": "阿里云轻量应用服务器，高性价比轻量化云服务器，一键部署各类应用，可视化便捷运维，自带固定带宽与安全防护，适合个人建站、开发测试、小型业务部署。",
+              "icon": "https://favicon.im/swasnext.console.aliyun.com?larger=true",
               "enabled": true
             }
           ]
