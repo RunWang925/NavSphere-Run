@@ -1533,6 +1533,14 @@
               "enabled": true
             }
           ]
+        },
+        {
+          "id": "3eb879ef-1db0-439e-be1d-e2b8dfb32378",
+          "title": "音乐素材",
+          "icon": "Music",
+          "description": "",
+          "enabled": true,
+          "items": []
         }
       ]
     },
