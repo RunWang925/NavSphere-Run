@@ -1343,6 +1343,14 @@
             }
           ],
           "enabled": true
+        },
+        {
+          "id": "e3988fe7-e768-4c4c-a850-a73acb8639ca",
+          "title": "穿透组网",
+          "icon": "Settings",
+          "description": "",
+          "enabled": true,
+          "items": []
         }
       ],
       "description": "",
