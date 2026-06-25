@@ -1694,6 +1694,14 @@
               "enabled": true
             }
           ]
+        },
+        {
+          "id": "189fe956-8ce2-4b9c-89be-76da56f3e480",
+          "title": "云服务器",
+          "icon": "Map",
+          "description": "",
+          "enabled": true,
+          "items": []
         }
       ]
     }
