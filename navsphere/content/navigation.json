@@ -8,14 +8,6 @@
       "enabled": true,
       "items": [
         {
-          "id": "site_1776418292324_y9l7g701f",
-          "title": "京东物流商家工作台",
-          "href": "https://wl.jdl.com/home",
-          "description": "京东物流，京东快递后台管理",
-          "icon": "/assets/favicon_1776418257069.png",
-          "enabled": true
-        },
-        {
           "id": "site_1777000363523_i1vmjl7ux",
           "title": "野猪佩奇弟弟 - 记录让幸福可以翻阅",
           "href": "https://hexo.814925.xyz",
@@ -63,6 +55,14 @@
               "href": "https://es.ys7.com/login",
               "description": "萤石商业智居，萤石云后台，监控后台，门店监控管理后台",
               "icon": "/assets/favicon_1776418305645.png",
+              "enabled": true
+            },
+            {
+              "id": "site_1776418292324_y9l7g701f",
+              "title": "京东物流商家工作台",
+              "href": "https://wl.jdl.com/home",
+              "description": "京东物流，京东快递后台管理",
+              "icon": "/assets/favicon_1776418257069.png",
               "enabled": true
             }
           ]
