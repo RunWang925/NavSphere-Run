@@ -1352,7 +1352,16 @@
       "id": "8",
       "title": "素材资源",
       "icon": "linecons-thumbs-up",
-      "items": [],
+      "items": [
+        {
+          "id": "site_1782353320633_6ucwcbwcv",
+          "title": "歌曲宝-找哥就用歌曲宝",
+          "href": "https://www.gequbao.com/",
+          "description": "访问 www.gequbao.com",
+          "icon": "https://favicon.im/www.gequbao.com?larger=true",
+          "enabled": true
+        }
+      ],
       "subCategories": [
         {
           "id": "8_1",
