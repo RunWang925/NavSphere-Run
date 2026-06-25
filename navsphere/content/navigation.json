@@ -9,6 +9,23 @@
       "items": [],
       "subCategories": [
         {
+          "id": "0ee5919a-0072-45a1-9af6-59f48b69d50b",
+          "title": "博客相关",
+          "icon": "Users",
+          "description": "",
+          "enabled": true,
+          "items": [
+            {
+              "id": "site_1777000363523_i1vmjl7ux",
+              "title": "野猪佩奇弟弟 - 记录让幸福可以翻阅",
+              "href": "https://hexo.814925.xyz",
+              "description": "本站以记录学习、积累经验、归纳知识、分享生活。相信你可以在这里找到对你有用的知识和教程。",
+              "icon": "/assets/favicon_1777000957579.ico",
+              "enabled": true
+            }
+          ]
+        },
+        {
           "id": "61d70b4b-c211-4f90-bc90-364f5561d250",
           "title": "工作相关",
           "icon": "Laptop",
@@ -37,23 +54,6 @@
               "href": "https://wl.jdl.com/home",
               "description": "京东物流，京东快递后台管理",
               "icon": "/assets/favicon_1776418257069.png",
-              "enabled": true
-            }
-          ]
-        },
-        {
-          "id": "0ee5919a-0072-45a1-9af6-59f48b69d50b",
-          "title": "博客相关",
-          "icon": "Users",
-          "description": "",
-          "enabled": true,
-          "items": [
-            {
-              "id": "site_1777000363523_i1vmjl7ux",
-              "title": "野猪佩奇弟弟 - 记录让幸福可以翻阅",
-              "href": "https://hexo.814925.xyz",
-              "description": "本站以记录学习、积累经验、归纳知识、分享生活。相信你可以在这里找到对你有用的知识和教程。",
-              "icon": "/assets/favicon_1777000957579.ico",
               "enabled": true
             }
           ]
