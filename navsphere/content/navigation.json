@@ -1350,7 +1350,16 @@
           "icon": "Settings",
           "description": "",
           "enabled": true,
-          "items": []
+          "items": [
+            {
+              "id": "site_1782372168859_vf2nnznws",
+              "title": "星空组网",
+              "href": "https://starvpn.cn/",
+              "description": "访问 starvpn.cn",
+              "icon": "https://favicon.im/starvpn.cn?larger=true",
+              "enabled": true
+            }
+          ]
         }
       ],
       "description": "",
