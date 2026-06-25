@@ -63,6 +63,14 @@
               "description": "访问 10.3.1.8",
               "icon": "/assets/img_1777012044583.png",
               "enabled": true
+            },
+            {
+              "id": "site_1777014943053_1bmpgl8ay",
+              "title": "意尔康体育BI系统",
+              "href": "http://10.3.1.8/#/login",
+              "description": "访问 10.3.1.8",
+              "icon": "/assets/img_1777012044583.png",
+              "enabled": true
             }
           ]
         },
@@ -232,14 +240,6 @@
           "href": "https://partner.microsoft.com/zh-cn/dashboard/microsoftedge/overview",
           "description": "edge 插件上传地址",
           "icon": "/assets/favicon_1768145646425.png",
-          "enabled": true
-        },
-        {
-          "id": "site_1777014943053_1bmpgl8ay",
-          "title": "意尔康体育BI系统",
-          "href": "http://10.3.1.8/#/login",
-          "description": "访问 10.3.1.8",
-          "icon": "/assets/img_1777012044583.png",
           "enabled": true
         }
       ],
