@@ -9,23 +9,6 @@
       "items": [],
       "subCategories": [
         {
-          "id": "bb0fe8e2-a7a7-415e-b53a-d0612e4534de",
-          "title": "舆情监控",
-          "icon": "Globe",
-          "description": "",
-          "enabled": true,
-          "items": [
-            {
-              "id": "site_1782294923522_pm1v4xa70",
-              "title": "圣融后台系统",
-              "href": "http://www.rendazx.com/admin",
-              "description": "",
-              "icon": "/assets/favicon_1782294904386.png",
-              "enabled": true
-            }
-          ]
-        },
-        {
           "id": "61d70b4b-c211-4f90-bc90-364f5561d250",
           "title": "工作相关",
           "icon": "Laptop",
@@ -71,6 +54,23 @@
               "href": "https://hexo.814925.xyz",
               "description": "本站以记录学习、积累经验、归纳知识、分享生活。相信你可以在这里找到对你有用的知识和教程。",
               "icon": "/assets/favicon_1777000957579.ico",
+              "enabled": true
+            }
+          ]
+        },
+        {
+          "id": "bb0fe8e2-a7a7-415e-b53a-d0612e4534de",
+          "title": "舆情监控",
+          "icon": "Globe",
+          "description": "",
+          "enabled": true,
+          "items": [
+            {
+              "id": "site_1782294923522_pm1v4xa70",
+              "title": "圣融后台系统",
+              "href": "http://www.rendazx.com/admin",
+              "description": "",
+              "icon": "/assets/favicon_1782294904386.png",
               "enabled": true
             }
           ]
