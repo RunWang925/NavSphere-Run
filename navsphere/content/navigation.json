@@ -88,6 +88,14 @@
               "description": "",
               "icon": "/assets/favicon_1782294904386.png",
               "enabled": true
+            },
+            {
+              "id": "site_1782352439780_dnua0vl9h",
+              "title": "草料网址二维码生成器 - 将网址生成二维码，扫码即可跳转",
+              "href": "https://cli.im/url",
+              "description": "草料二维码网址码生成器，支持单网址、多网址聚合，生成二维码扫码跳转。",
+              "icon": "/assets/favicon_1782352431896.ico",
+              "enabled": true
             }
           ]
         }
