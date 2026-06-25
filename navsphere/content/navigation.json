@@ -1725,6 +1725,14 @@
               "description": "一站式公网 + 内网域名解析托管，支持 A/CNAME/MX 等多类型解析记录配置、权重负载均衡、批量管理解析记录，国内解析节点稳定高效，可用于网站域名指向、企业邮箱解析、云服务器内网域名调度，搭配云主机、CDN 业务实现域名统一运维管理。",
               "icon": "https://favicon.im/console.huaweicloud.com?larger=true",
               "enabled": true
+            },
+            {
+              "id": "site_1782352379173_09r6nv15l",
+              "title": "华为香港服务器|宝塔面板",
+              "href": "http://183.87.140.255:30684/6ba1120b",
+              "description": "访问 183.87.140.255",
+              "icon": "https://favicon.im/183.87.140.255?larger=true",
+              "enabled": true
             }
           ]
         }
