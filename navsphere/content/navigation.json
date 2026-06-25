@@ -8,14 +8,6 @@
       "enabled": true,
       "items": [
         {
-          "id": "site_1776418121276_g1n1k2psh",
-          "title": "Scrm",
-          "href": "https://scrm.yearcon.com.cn/",
-          "description": "访问 scrm.yearcon.com.cn",
-          "icon": "/assets/favicon_1777000899487.png",
-          "enabled": true
-        },
-        {
           "id": "site_1776418292324_y9l7g701f",
           "title": "京东物流商家工作台",
           "href": "https://wl.jdl.com/home",
@@ -64,7 +56,16 @@
           "icon": "Laptop",
           "description": "",
           "enabled": true,
-          "items": []
+          "items": [
+            {
+              "id": "site_1776418121276_g1n1k2psh",
+              "title": "创客SCRM",
+              "href": "https://scrm.yearcon.com.cn/",
+              "description": "访问 scrm.yearcon.com.cn",
+              "icon": "/assets/favicon_1777000899487.png",
+              "enabled": true
+            }
+          ]
         }
       ]
     },
