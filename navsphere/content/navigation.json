@@ -1556,6 +1556,14 @@
               "description": "访问 www.isflac.com",
               "icon": "https://favicon.im/www.isflac.com?larger=true",
               "enabled": true
+            },
+            {
+              "id": "site_1786071548333_j4buusmsh",
+              "title": "歌曲宝",
+              "href": "https://www.gequbao.com/",
+              "description": "访问 www.gequbao.com",
+              "icon": "/assets/favicon_1786071524095.png",
+              "enabled": true
             }
           ]
         }
